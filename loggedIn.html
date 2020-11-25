@@ -3,6 +3,35 @@
 <head>
   <meta charset="UTF-8">
 </head>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD0qw2epkWI8JFe5Sqqj2WBM-4HL-Nu4WY",
+    authDomain: "diet-b2bc0.firebaseapp.com",
+    databaseURL: "https://diet-b2bc0.firebaseio.com",
+    projectId: "diet-b2bc0",
+    storageBucket: "diet-b2bc0.appspot.com",
+    messagingSenderId: "310500147123",
+    appId: "1:310500147123:web:c9d71906a39e464e4bd5c6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 <body>
+  <script>
+    firebase.auth().onAuthStateChanged(function(user){
+      if(user){
+        document.body.innerHTML = user.displayName
+      }
+        else{
+          console.log("no user signed in");
+        }
+    });
 </body>
 </html>
