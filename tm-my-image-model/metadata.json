@@ -1,1 +1,1 @@
-{"tfjsVersion":"1.3.1","tmVersion":"2.3.1","packageVersion":"0.8.4","packageName":"@teachablemachine/image","timeStamp":"2020-11-23T09:26:05.962Z","userMetadata":{},"modelName":"tm-my-image-model","labels":["10000","20000"]}
+{"tfjsVersion":"1.3.1","tmVersion":"2.3.1","packageVersion":"0.8.4","packageName":"@teachablemachine/image","timeStamp":"2020-11-25T12:02:34.976Z","userMetadata":{},"modelName":"tm-my-image-model","labels":["Protein","Carbs","Fat","Vitamin","Mineral"]}
